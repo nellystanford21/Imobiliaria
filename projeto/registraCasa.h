@@ -1,5 +1,6 @@
 #pragma once 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -12,5 +13,16 @@ class registraCasa {
         float areaConstruida;
 
     public:
-        void cadastraCasa();
-}; 
+        string getTituloAnuncio();
+        int getNumeroQuartos();
+        int getNumeroPavimentos();
+        float getAreaTerreno();
+        float getAreaConstruida();
+
+        string setTituloAnuncio(string titulo);
+        int setNumeroQuartos(int quartos);
+        int setNumeroPavimentos(int pavimentos);
+        float setAreaTerreno(float areaT);
+        float setAreaConstruida(float areaC);
+
+};
