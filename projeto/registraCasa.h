@@ -13,4 +13,4 @@ class registraCasa {
 
     public:
         void cadastraCasa();
-};
+}; 
