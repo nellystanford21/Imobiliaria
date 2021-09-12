@@ -1,6 +1,6 @@
 #pragma once
 
-class MenuPrincipal {
+class MenuPrincipal { 
     public:
         void ExibeMenu();
 };
