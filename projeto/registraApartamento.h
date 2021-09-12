@@ -15,4 +15,4 @@ class registraApartamento {
 
     public:
         void cadastraApartamento();
-};
+}; 
