@@ -9,5 +9,5 @@ class registraTerreno {
         float area;
 
     public:
-        void cadastraTerreno();
+        void cadastraTerreno(); 
 };
