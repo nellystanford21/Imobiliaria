@@ -13,6 +13,6 @@ class registraTerreno {
         string getTituloAnuncio();
         float getArea();
 
-        string setTituloAnuncio(string titulo);
-        float setArea(float a);
+        void setTituloAnuncio(string titulo);
+        void setArea(float a);
 };

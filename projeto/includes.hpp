@@ -1,7 +1,17 @@
-#include "menu.h"
-#include "registraApartamento.h"
-#include "registraCasa.h"
-#include "registraTerreno.h"
+#ifdef __linux__ 
+    #include <unistd.h>
+    #define CLEAR "clear"
+#elif _WIN32
+    #include <windows.h>
+    #define CLEAR "cls"
+#else
+    #error "OS not supported!"
+#endif
+
+#include "menu.hpp"
+#include "registraApartamento.hpp"
+#include "registraCasa.hpp"
+#include "registraTerreno.hpp"
 //#include "consultaImovel.h"
 //#include "consultaBairro"
 //#include "consultaValor.h"
@@ -10,6 +20,7 @@
 //#include "removeImovel.h"
 
 
-obs: 
+/* obs: 
 aqui não estão todas as opções do menu, pois ainda estamos decidindo quais estarão presentes em nosso programa
 caso ocorra mudança, devemos lembrar de mudar os números no switch case para indicar as ações correspondentes
+ */

@@ -1,10 +1,10 @@
-#include "registraTerreno.h"
+#include "registraTerreno.hpp"
 
-string registraTerreno::setTituloAnuncio(string titulo) {
+void registraTerreno::setTituloAnuncio(string titulo) {
     tituloAnuncio = titulo;
 }
 
-float registraTerreno::setArea(float a) {
+void registraTerreno::setArea(float a) {
     area = a;
 }
 

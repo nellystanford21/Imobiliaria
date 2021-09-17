@@ -19,10 +19,10 @@ class registraCasa {
         float getAreaTerreno();
         float getAreaConstruida();
 
-        string setTituloAnuncio(string titulo);
-        int setNumeroQuartos(int quartos);
-        int setNumeroPavimentos(int pavimentos);
-        float setAreaTerreno(float areaT);
-        float setAreaConstruida(float areaC);
+        void setTituloAnuncio(string titulo);
+        void setNumeroQuartos(int quartos);
+        void setNumeroPavimentos(int pavimentos);
+        void setAreaTerreno(float areaT);
+        void setAreaConstruida(float areaC);
 
 };

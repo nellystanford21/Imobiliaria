@@ -1,23 +1,23 @@
-#include "registraCasa.h"
+#include "registraCasa.hpp"
 
-string registraCasa::setTituloAnuncio(string titulo) {
+void registraCasa::setTituloAnuncio(string titulo) {
     tituloAnuncio = titulo;
 }
 
-int registraCasa::setNumeroQuartos(int quartos) {
+void registraCasa::setNumeroQuartos(int quartos) {
     numeroQuartos = quartos;
 }
 
-int registraCasa::setNumeroPavimentos(int pavimentos) {
+void registraCasa::setNumeroPavimentos(int pavimentos) {
     numeroPavimentos = pavimentos;
 
 }
 
-float registraCasa::setAreaTerreno(float areaT){
+void registraCasa::setAreaTerreno(float areaT){
     areaTerreno = areaT;
 }
 
-float registraCasa::setAreaConstruida(float areaC) {
+void registraCasa::setAreaConstruida(float areaC) {
     areaConstruida = areaC;
 }
 

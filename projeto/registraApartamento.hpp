@@ -7,28 +7,28 @@ using namespace std;
 class registraApartamento {
     private:
         string tituloAnuncio;
-        int numeroQuartos;
-        float area;
         string posicao;
-        int andar;
-        float valorCondominio;
+        int numeroQuartos;
         int vagasGaragem;
+        int andar;
+        float area;
+        float valorCondominio;
 
     public:
         string getTituloAnuncio();
-        int getNumeroQuartos();
-        float getArea();
         string getPosicao();
-        int getAndar();
-        float getValorCondominio();
+        int getNumeroQuartos();
         int getVagasGaragem();
+        int getAndar();
+        float getArea();
+        float getValorCondominio();
 
         string setTituloAnuncio();
-        int setNumeroQuartos();
-        float setArea();
         string setPosicao();
-        int setAndar();
-        float setValorCondominio();
+        int setNumeroQuartos();
         int setVagasGaragem();
+        int setAndar();
+        float setArea();
+        float setValorCondominio();
 
 };
