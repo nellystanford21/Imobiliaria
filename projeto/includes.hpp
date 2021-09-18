@@ -9,7 +9,7 @@
 #endif
 
 #include "menu.hpp"
-#include "registraApartamento.hpp"
+#include "registraApto.hpp"
 #include "registraCasa.hpp"
 #include "registraTerreno.hpp"
 //#include "consultaImovel.h"

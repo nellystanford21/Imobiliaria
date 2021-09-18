@@ -10,6 +10,8 @@ class registraTerreno {
         float area;
 
     public:
+        registraTerreno();
+        
         string getTituloAnuncio();
         float getArea();
 

@@ -1,6 +1,7 @@
 #pragma once 
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -8,21 +9,17 @@ class registraCasa {
     private:
         string tituloAnuncio;
         int numeroQuartos;
-        int numeroPavimentos;
-        float areaTerreno;
-        float areaConstruida;
+        float areaCasa;
+        
 
     public:
+        registraCasa();
+        
         string getTituloAnuncio();
         int getNumeroQuartos();
-        int getNumeroPavimentos();
-        float getAreaTerreno();
-        float getAreaConstruida();
+        float getAreaCasa();
 
         void setTituloAnuncio(string titulo);
         void setNumeroQuartos(int quartos);
-        void setNumeroPavimentos(int pavimentos);
-        void setAreaTerreno(float areaT);
-        void setAreaConstruida(float areaC);
-
+        void setAreaCasa(float areaCasa);
 };

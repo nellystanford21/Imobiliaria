@@ -4,10 +4,9 @@
 
 using namespace std;
 
-class registraApartamento {
+class registraApto{
     private:
         string tituloAnuncio;
-        string posicao;
         int numeroQuartos;
         int vagasGaragem;
         int andar;
@@ -15,20 +14,20 @@ class registraApartamento {
         float valorCondominio;
 
     public:
+        registraApto();
+        
         string getTituloAnuncio();
-        string getPosicao();
         int getNumeroQuartos();
         int getVagasGaragem();
         int getAndar();
         float getArea();
         float getValorCondominio();
 
-        string setTituloAnuncio();
-        string setPosicao();
-        int setNumeroQuartos();
-        int setVagasGaragem();
-        int setAndar();
-        float setArea();
-        float setValorCondominio();
+        void setTituloAnuncio(string titulo);
+        void setNumeroQuartos(int qtdQuartos);
+        void setVagasGaragem(int qtdVagas);
+        void setAndar(int andar);
+        void setArea(float area);
+        void setValorCondominio(float condominio);
 
 };
