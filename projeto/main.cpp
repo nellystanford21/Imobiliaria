@@ -1,4 +1,3 @@
-#include <bits/stdc++.h>
 #include "includes.hpp"
 
 using namespace std;
@@ -36,13 +35,18 @@ int main () {
 
                 switch(op2){
                     case 1:
+                        system(CLEAR);
                         menu.cadastroCasaMenu(&casa);
                         break;
                     case 2:
+                        system(CLEAR);
                         menu.cadastroAptoMenu(&apto);
                         break;
                     case 3:
+                        system(CLEAR);
                         menu.cadastroTerrenoMenu(&terreno);
+                        break;
+                    case 0:
                         break;
                     default:
                         system(CLEAR);
@@ -63,28 +67,32 @@ int main () {
                 switch(op3){
                     case 1:
                         system(CLEAR);
-                        consulta ->consultaCasa();
+                        consulta ->consultaCasa(casa);
                         break;
                     case 2:
                         system(CLEAR);
-                        consulta ->consultaApto();
+                        consulta ->consultaApto(apto);
                         break;
                     case 3:
                         system(CLEAR);
-                        consulta ->consultaTerreno();
+                        consulta ->consultaTerreno(terreno);
+                        break;
+                    case 0:
                         break;
                     default:
                         system(CLEAR);
                         cout << "Unknown menu command" << endl;
                         sleep(3);
                 }
-                
                 break;
             //case 3:
                 //remover imovel
                 //break;
         }
     }
+
+    system(CLEAR);
+    menu.byeMenu();
 
     return 0; 
 }

@@ -8,6 +8,7 @@
     #error "OS not supported!"
 #endif
 
+#include <bits/stdc++.h>
 #include "menu.hpp"
 #include "registraApto.hpp"
 #include "registraCasa.hpp"

@@ -12,9 +12,18 @@ void Menu::bvMenu(){
         cout << "                 Bem-VindE a imobiliaria Uc Ad Udac                " << endl;  
         cout << "-------------------------------------------------------------------" << endl;
         cout << "Timer: " << i << endl;
-        sleep(1);
+        sleep(3);
         system(CLEAR);
     }
+}
+
+void Menu::byeMenu(){
+    cout << "-------------------------------------------------------------------" << endl;
+    cout << "         a imobiliaria Uc Ad Udac agradece sua preferencia!        " << endl;
+    cout << "-------------------------------------------------------------------\n" << endl;
+
+
+    cout << "Ass: Marquito =)\n";
 }
 
 void Menu::mainMenu(){
@@ -36,8 +45,6 @@ void Menu::cadastroMenu(){
 }
 
 void Menu::cadastroCasaMenu(vector <registraCasa*> *casa){
-    //itens casa:
-
     registraCasa *p = new registraCasa();
 
     string tituloAnuncio;
@@ -46,6 +53,7 @@ void Menu::cadastroCasaMenu(vector <registraCasa*> *casa){
 
     cout << "Digite o titulo do anuncio: " ;
     getline(cin, tituloAnuncio);
+    //cin.ignore();
 
     cout << "Digite o numero de quartos:  " ;
     cin >> numeroQuartos;
@@ -81,6 +89,7 @@ void Menu::cadastroAptoMenu(vector <registraApto*> *apto){
     
     cout << "Digite o titulo do anuncio: ";
     getline(cin, tituloApto);
+    //cin.ignore();
 
     cout << "Digite o numero de quartos: " ;
     cin >> qtdQuartosApto;
@@ -100,7 +109,8 @@ void Menu::cadastroAptoMenu(vector <registraApto*> *apto){
     p -> setTituloAnuncio(tituloApto);
     p -> setNumeroQuartos(qtdQuartosApto);
     p -> setVagasGaragem(vagasGaragem);
-    p -> setArea(andar);
+    p -> setAndar(andar);
+    p -> setArea(area);
     p -> setValorCondominio(valorCondominio);
 
     apto -> push_back(p);
@@ -114,6 +124,7 @@ void Menu::cadastroTerrenoMenu(vector <registraTerreno*> *terreno){
 
     cout << "Digite o titulo do anuncio: ";
     getline(cin, tituloAnuncioTerreno);
+    //cin.ignore();
 
     cout << "Digite a area do terreno: ";
     cin >> areaTerreno;

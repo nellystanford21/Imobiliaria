@@ -6,6 +6,8 @@ class Menu{
         Menu();
         void bvMenu();
         void mainMenu();
+        void byeMenu();
+
         void cadastroMenu();
         void cadastroCasaMenu(vector <registraCasa*> *casa);
         void cadastroAptoMenu(vector <registraApto*> *apto);

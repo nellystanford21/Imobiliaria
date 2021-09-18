@@ -16,7 +16,6 @@ void registraCasa::setAreaCasa(float areaCasa) {
     this -> areaCasa = areaCasa;
 }
 
-
 string registraCasa::getTituloAnuncio() {
     return tituloAnuncio;
 }

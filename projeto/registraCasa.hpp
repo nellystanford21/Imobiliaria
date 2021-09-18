@@ -10,7 +10,6 @@ class registraCasa {
         string tituloAnuncio;
         int numeroQuartos;
         float areaCasa;
-        
 
     public:
         registraCasa();
