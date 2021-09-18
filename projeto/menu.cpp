@@ -32,6 +32,7 @@ void Menu::cadastroMenu(){
     cout << "1 - Casa" << endl;
     cout << "2 - Apartamento" << endl;
     cout << "3 - Terreno" << endl;
+    cout << "0 - Volta ao menu principal" << endl;
 }
 
 void Menu::cadastroCasaMenu(vector <registraCasa*> *casa){
@@ -60,7 +61,7 @@ void Menu::cadastroCasaMenu(vector <registraCasa*> *casa){
 
     casa->push_back(p);
 
-    /* for(int i = 0; i < casa->size(); i++){
+   /*  for(int i = 0; i < casa->size(); i++){
         cout << casa[i]->getTituloAnuncio() << endl;
         cout << casa[i]->getAreaCasa() << endl;
         cout << casa[i]->getNumeroQuartos() << endl;
@@ -121,4 +122,15 @@ void Menu::cadastroTerrenoMenu(vector <registraTerreno*> *terreno){
     p -> setArea(areaTerreno);
 
     terreno -> push_back(p);
+}
+
+void Menu::consultaMenu(){
+    cout << "---------------- Bem-VindE ao menu de consulta ----------------\n" << endl;
+
+    cout << "Selecione o tipo de imovel que você deseja cadastrar:\n" << endl;
+
+    cout << "1 - Casa" << endl;
+    cout << "2 - Apartamento" << endl;
+    cout << "3 - Terreno" << endl;
+    cout << "0 - Volta ao menu principal" << endl;
 }

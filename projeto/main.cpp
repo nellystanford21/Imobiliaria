@@ -15,17 +15,15 @@ vector <registraTerreno* > terreno;
 
 int main () {
     system(CLEAR);
-    Menu menu;
+    
+    int op;
 
+    Menu menu;
     menu.bvMenu();
 
-    int op;
-    int tipoDeImovel;
-
-    menu.mainMenu();
-    cin >> op;
-
     while(op){
+        menu.mainMenu();
+        cin >> op;
         switch(op){
             case 1:
                 int op2;
@@ -46,11 +44,42 @@ int main () {
                     case 3:
                         menu.cadastroTerrenoMenu(&terreno);
                         break;
-                }
+                    default:
+                        system(CLEAR);
+                        cout << "Unknown menu command" << endl;
+                        sleep(3);
+                }   
                 break;
-            //case 2:
-                //nesse caso, será feita a consulta de imovel
-                //break;
+            case 2:
+                int op3;
+
+                Consulta *consulta = new Consulta();
+
+                system(CLEAR);
+                menu.consultaMenu();
+                
+                cin >> op3;
+
+                switch(op3){
+                    case 1:
+                        system(CLEAR);
+                        consulta ->consultaCasa();
+                        break;
+                    case 2:
+                        system(CLEAR);
+                        consulta ->consultaApto();
+                        break;
+                    case 3:
+                        system(CLEAR);
+                        consulta ->consultaTerreno();
+                        break;
+                    default:
+                        system(CLEAR);
+                        cout << "Unknown menu command" << endl;
+                        sleep(3);
+                }
+                
+                break;
             //case 3:
                 //remover imovel
                 //break;

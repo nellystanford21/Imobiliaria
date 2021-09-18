@@ -12,6 +12,7 @@
 #include "registraApto.hpp"
 #include "registraCasa.hpp"
 #include "registraTerreno.hpp"
+#include "consulta.hpp"
 //#include "consultaImovel.h"
 //#include "consultaBairro"
 //#include "consultaValor.h"

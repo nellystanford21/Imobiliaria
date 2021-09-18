@@ -10,4 +10,6 @@ class Menu{
         void cadastroCasaMenu(vector <registraCasa*> *casa);
         void cadastroAptoMenu(vector <registraApto*> *apto);
         void cadastroTerrenoMenu(vector <registraTerreno*> *terreno);
+
+        void consultaMenu();
 };
