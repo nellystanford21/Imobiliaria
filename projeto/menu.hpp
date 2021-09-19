@@ -14,4 +14,5 @@ class Menu{
         void cadastroTerrenoMenu(vector <registraTerreno*> *terreno);
 
         void consultaMenu();
+        void removeMenu();
 };

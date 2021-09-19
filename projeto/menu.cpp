@@ -145,3 +145,14 @@ void Menu::consultaMenu(){
     cout << "3 - Terreno" << endl;
     cout << "0 - Volta ao menu principal" << endl;
 }
+
+void Menu::removeMenu(){
+    cout << "---------------- Bem-VindE a remocao de item ----------------\n" << endl;
+
+    cout << "Selecione o tipo de imovel que você deseja remover da lista:\n" << endl;
+
+    cout << "1 - Casa" << endl;
+    cout << "2 - Apartamento" << endl;
+    cout << "3 - Terreno" << endl;
+    cout << "0 - Voltar ao menu principal" << endl;
+}

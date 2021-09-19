@@ -20,6 +20,11 @@ int main () {
     Menu menu;
     menu.bvMenu();
 
+    Consulta *consulta;
+    consulta = NULL;
+    Remove *remove;
+    remove = NULL;
+
     while(op){
         menu.mainMenu();
         cin >> op;
@@ -57,7 +62,7 @@ int main () {
             case 2:
                 int op3;
 
-                Consulta *consulta = new Consulta();
+                consulta = new Consulta();
 
                 system(CLEAR);
                 menu.consultaMenu();
@@ -85,9 +90,47 @@ int main () {
                         sleep(3);
                 }
                 break;
-            //case 3:
-                //remover imovel
-                //break;
+            case 3:
+                int op4, num;
+
+                remove = new Remove();
+
+                system(CLEAR);
+                menu.removeMenu();
+
+                cin >> op4;
+
+                switch(op4) {
+                    case 1:
+                        system(CLEAR);
+                        remove -> printCasa(casa);
+                        cin >> num;
+                        //casa.erase (casa.begin() + (num - 1)); 
+                        casa.erase(next(casa.begin(), num-1) );
+                        break;
+                    case 2:
+                        system(CLEAR);
+                        remove -> printAptos(apto);
+                        cin >> num;
+                        //apto.erase (apto.begin() + (num - 1));
+                        break;
+                    case 3:
+                        system(CLEAR);
+                        remove -> printTerrenos(terreno);
+                        cin >> num;
+                        //terreno.erase (terreno.begin() + (num - 1));
+                        break;
+                    case 0:
+                        break;
+                    default:
+                        system(CLEAR);
+                        cout << "Unknown menu command" << endl;
+                        sleep(3);
+                }
+            default:
+                system(CLEAR);
+                cout << "Unknown menu command" << endl;
+                sleep(3);
         }
     }
 

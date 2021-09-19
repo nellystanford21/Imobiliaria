@@ -14,6 +14,7 @@
 #include "registraCasa.hpp"
 #include "registraTerreno.hpp"
 #include "consulta.hpp"
+#include "remove.hpp"
 //#include "consultaImovel.h"
 //#include "consultaBairro"
 //#include "consultaValor.h"
