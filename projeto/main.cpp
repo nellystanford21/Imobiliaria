@@ -29,6 +29,8 @@ int main () {
         menu.mainMenu();
         cin >> op;
         switch(op){
+            case 0:
+                break;
             case 1:
                 int op2;
 
@@ -41,20 +43,24 @@ int main () {
                 switch(op2){
                     case 1:
                         system(CLEAR);
+                       
                         menu.cadastroCasaMenu(&casa);
                         break;
                     case 2:
                         system(CLEAR);
+                       
                         menu.cadastroAptoMenu(&apto);
                         break;
                     case 3:
                         system(CLEAR);
+                        
                         menu.cadastroTerrenoMenu(&terreno);
                         break;
                     case 0:
                         break;
                     default:
                         system(CLEAR);
+                        
                         cout << "Unknown menu command" << endl;
                         sleep(3);
                 }   
@@ -72,20 +78,24 @@ int main () {
                 switch(op3){
                     case 1:
                         system(CLEAR);
+                       
                         consulta ->consultaCasa(casa);
                         break;
                     case 2:
                         system(CLEAR);
+                       
                         consulta ->consultaApto(apto);
                         break;
                     case 3:
                         system(CLEAR);
+                       
                         consulta ->consultaTerreno(terreno);
                         break;
                     case 0:
                         break;
                     default:
                         system(CLEAR);
+                       
                         cout << "Unknown menu command" << endl;
                         sleep(3);
                 }
@@ -103,33 +113,40 @@ int main () {
                 switch(op4) {
                     case 1:
                         system(CLEAR);
+
                         remove -> printCasa(casa);
                         cin >> num;
-                        //casa.erase (casa.begin() + (num - 1)); 
-                        casa.erase(next(casa.begin(), num-1) );
+
+                        remove -> removeCasa(&casa, num);
                         break;
                     case 2:
                         system(CLEAR);
+
                         remove -> printAptos(apto);
                         cin >> num;
-                        //apto.erase (apto.begin() + (num - 1));
+
+                        remove ->removeApto(&apto, num);
                         break;
                     case 3:
                         system(CLEAR);
+
                         remove -> printTerrenos(terreno);
                         cin >> num;
-                        //terreno.erase (terreno.begin() + (num - 1));
+                        
+                        remove -> removeTerreno(&terreno, num);
                         break;
                     case 0:
                         break;
                     default:
                         system(CLEAR);
-                        cout << "Unknown menu command" << endl;
+                        
+                        cout << "Unknown menu command opa" << endl;
                         sleep(3);
                 }
+                break;
             default:
                 system(CLEAR);
-                cout << "Unknown menu command" << endl;
+                cout << "Unknown menu command aqui" << endl;
                 sleep(3);
         }
     }

@@ -15,4 +15,5 @@ class Menu{
 
         void consultaMenu();
         void removeMenu();
+        void addedMenu();
 };

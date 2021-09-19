@@ -12,7 +12,7 @@ void Menu::bvMenu(){
         cout << "                 Bem-VindE a imobiliaria Uc Ad Udac                " << endl;  
         cout << "-------------------------------------------------------------------" << endl;
         cout << "Timer: " << i << endl;
-        sleep(3);
+        sleep(0.3);
         system(CLEAR);
     }
 }
@@ -68,6 +68,11 @@ void Menu::cadastroCasaMenu(vector <registraCasa*> *casa){
     p -> setAreaCasa(areaCasa);
 
     casa->push_back(p);
+
+    cout << "Adicionado com sucesso!" << endl;
+    cout << "Precione enter para continuar. . ." << endl;
+    cin.ignore();
+    getchar();
 
    /*  for(int i = 0; i < casa->size(); i++){
         cout << casa[i]->getTituloAnuncio() << endl;
@@ -155,4 +160,8 @@ void Menu::removeMenu(){
     cout << "2 - Apartamento" << endl;
     cout << "3 - Terreno" << endl;
     cout << "0 - Voltar ao menu principal" << endl;
+}
+
+void Menu::addedMenu(){
+    
 }

@@ -9,7 +9,7 @@ Remove::Remove(){
 void Remove::printCasa(const vector <registraCasa*> casa){
 
     for(int i = 0; i < casa.size(); i++){
-        cout << i+1 << ": " << i <<": " << casa[i] -> getTituloAnuncio() << endl;
+        cout << i+1 << ": " << casa[i] -> getTituloAnuncio() << endl;
     }
 
     cout << "Indique o número de qual das casas você deseja remover: " << endl;
@@ -17,35 +17,47 @@ void Remove::printCasa(const vector <registraCasa*> casa){
 
 void Remove::printAptos(const vector <registraApto*> apto){
     for(int i = 0; i < apto.size(); i++){
-        cout << i+1 << ": " << i << ": " << apto[i] -> getTituloAnuncio() << endl;
+        cout << i+1 << ": " << apto[i] -> getTituloAnuncio() << endl;
     }
 
     cout << "Indique o número de qual dos apartamentos você deseja remover: " << endl;
-    
 }
 
 void Remove::printTerrenos(const vector <registraTerreno*> terreno){
     for(int i = 0; i < terreno.size(); i++){
-        cout << i+1 << ": " << i << ": " << terreno[i] -> getTituloAnuncio() << endl;
+        cout << i+1 << ": " << terreno[i] -> getTituloAnuncio() << endl;
     }
     
     cout << "Indique o número de qual dos terrenos você deseja remover: " << endl;
-    
 }
 
-//https://www.includehelp.com/stl/erase-elements-in-cpp-vector-using-vector-erase.aspx
-
 void Remove::removeCasa( vector <registraCasa*> *casa, int num){
-    cout << "ok\n";
-   
+    casa -> erase(casa -> begin() + num - 1);
+
+/*     for(int i = 0; i < casa -> size(); i++){
+        cout << i+1 << ": " << casa[i] -> getTituloAnuncio() << endl;
+    }
+ */ 
+    cout << "Removido com sucesso!" << endl;
+    cout << "Precione enter para continuar. . ." << endl;
+    cin.ignore();
+    getchar();
 }
 
 void Remove::removeApto( vector <registraApto*> *apto, int num){
-    cout << "ok\n";
-    
+    apto -> erase(apto -> begin() + num - 1);
+   
+    cout << "Removido com sucesso!" << endl;
+    cout << "Precione enter para continuar. . ." << endl;
+    cin.ignore();
+    getchar();
 }
 
 void Remove::removeTerreno( vector <registraTerreno*> *terreno, int num){
-    cout << "ok\n";
-    
+    terreno -> erase (terreno -> begin() + num - 1);
+   
+    cout << "Removido com sucesso!" << endl;
+    cout << "Precione enter para continuar. . ." << endl;
+    cin.ignore();
+    getchar();
 } 
